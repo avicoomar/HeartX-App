@@ -1,0 +1,54 @@
+1.) <! -- Ask negi result parameter. Currently returns only 0/1....store it in a result 
+	parameter with a nessage and ask the url for predict
+
+         Ask everyone whether they want different templates for result or the same
+
+	 Firefox br problem-->
+
+2.) Links to open : 
+	BasicTemplate.html
+	index.html
+	
+
+Ca- 3 values - (0,1,2)
+Resting BP - Your bp at rest level
+Explain all inputs 
+thal-0
+
+from keras.models
+import load_model
+from flask import
+Flask
+from flask import
+render_template
+
+myapp = Flask("app")
+
+@myapp.route("/")
+def myform():
+
+
+	return render_template("form.html")
+
+from flask import request
+
+@myapp.route("/result",methods=['GET'])
+def resform():
+
+
+x1 = request.args.get("x")
+
+
+x2 = request.args.get("y")
+
+
+return (str(x1) + str(x2))
+
+
+
+
+
+
+
+myapp.run(host='ip_address',port=5000)
+
