@@ -5,7 +5,7 @@
    To do that, open cmd/terminal and type 
    "pip install flask"
 
-3) To run the local server type "python aviii.py" in the
+3) To run the local server type "python app.py" in the
    terminal. Make sure to navigate to the mini project's 
    folder before running.
 
