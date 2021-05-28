@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
 </head>
 
 <body>
@@ -67,7 +68,8 @@
 							<div class="col-md-4">
 								<div class="header-top-right d-none d-md-block">
 									<ul>
-										<li><a href="https://github.com/adnanazam26/HeartX-App"><i class="fa fa-github" style="font-size:40px"></i></a></li>
+										<li><a href="https://github.com/adnanazam26/HeartX-App"><i class="fa fa-github" style="font-size:30px"></i></a></li>
+										<li style="color: white">Github</li>
 										
 									</ul>
 								</div>
@@ -80,8 +82,8 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<nav class="navbar navbar-expand-lg">
-									<a class="navbar-brand" href="index.html">
-										<img src="static/img/logo/logo.svg" alt="Logo">
+									<a class="navbar-brand" href="{{ url_for('home') }}">
+										<img src="static/img/logo/logo1.jpg" alt="Logo">
 									</a>
 									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 										aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,11 +148,11 @@
 						<a href="http://google.com/search?q=hospitals+nearby" target="_blank">
 
 							
-							<button style="text-align: center;margin: auto;display: flex;display: grid;margin: 100px;margin-right: 60px" class="btn theme-btn">Hospitals Nearby</button>
+							<button style="text-align: center;margin: auto;display: flex;display: grid;margin: 60px;margin-right: 60px" class="btn theme-btn">Hospitals Nearby</button>
 						</a>
 						<a href="http://google.com/search?q=precautions+for+heart+disease" target="_blank">
 							
-							<button style="text-align: center;margin: auto;display: flex;display: grid;margin-left: 120px;margin-bottom: 55px" class="btn theme-btn">Precautions</button>
+							<button style="text-align: center;margin: auto;display: flex;display: grid;margin-left: 60px;margin-bottom: 55px" class="btn theme-btn">Precautions</button>
 						</a>
 </div>
 
@@ -347,8 +349,7 @@
 					<div class="section-title text-center mb-55">
 						<span class="wow fadeInDown" data-wow-delay=".2s">Quick Reads</span>
 						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">Latest News</h2>
-						<p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-							dinonumy <br class="d-none d-lg-block"> eirmod tempor invidunt ut labore et dolore magn.</p>
+						<p class="wow fadeInUp" data-wow-delay=".4s">Find latest articles <br class="d-none d-lg-block"> regarding heart diseases.</p>
 					</div>
 				</div>
 			</div>
@@ -361,8 +362,7 @@
 						<div class="blog-content">
 							<h4><a href="#">250+ Medical Tips We Just
 									Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -374,8 +374,7 @@
 						</div>
 						<div class="blog-content">
 							<h4><a href="#">100+ Medical Tips We Just Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -387,8 +386,7 @@
 						</div>
 						<div class="blog-content">
 							<h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -424,10 +422,12 @@
 				<div class="row">
 					<div class="col-xl-4 col-lg-5 col-md-6">
 						<div class="footer-widget mb-30">
-							<a href="index.html" class="logo"><img src="static/img/logo/logo.svg" alt=""></a>
-							<p>Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-								labore dolore magna
-								aliquyam erat diam voluptua.</p>
+							<a href="index.html" class="logo"><img src="static/img/logo/logo1.jpg" alt=""></a>
+							<p>Who are we?<br>
+							We are a group of highy motivated engineering students from REVA University,Bangalore. 
+							We are always eager to learn new things and enhance our skills so that we can contribute to
+							this world's rapid growing technology.
+							</p>
 							<div class="footer-social-links">
 								<ul>
 									<li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
@@ -442,28 +442,17 @@
 						<div class="footer-widget mb-30">
 							<h4>Quick Link</h4>
 							<ul class="footer-links">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Doctor</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#predict">Predict</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#faq">FAQs</a></li>
+								<li><a href="#query">Service</a></li>
+								<li><a href="#blog">Articles</a></li>
+								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-2 col-lg-3 col-md-5">
-						<div class="footer-widget mb-30">
-							<h4>Quick Link</h4>
-							<ul class="footer-links">
-								<li><a href="#">Cardiology</a></li>
-								<li><a href="#">Neurology</a></li>
-								<li><a href="#">Gastroenterology</a></li>
-								<li><a href="#">Routine Checkup</a></li>
-								<li><a href="#">Orthopedics</a></li>
-								<li><a href="#">Dental Surgery</a></li>
-							</ul>
-						</div>
-					</div>
+
 					<div class="col-xl-4 col-lg-12 col-md-7">
 						<div class="footer-widget mb-30">
 							<h4>Our Location</h4>
@@ -476,7 +465,7 @@
 				</div>
 			</div>
 			<div class="copyright-area">
-				<p class="mb-0 text-center">Designed and Developed By <a href="https://media.pitchfork.com/photos/5c7d4c1b4101df3df85c41e5/1:1/w_600/Dababy_BabyOnBaby.jpg" rel="nofollow">Avi Coomar</a></p>
+				<p class="mb-0 text-center">Designed and Developed By <a href="https://i.kym-cdn.com/entries/icons/facebook/000/034/772/Untitled-1.jpg" rel="nofollow">Avi Coomar</a></p>
 			</div>
 		</div>
 	</footer>

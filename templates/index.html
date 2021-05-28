@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="static/css/animate.css">
 	<link rel="stylesheet" href="static/css/tiny-slider.css">
 	<link rel="stylesheet" href="static/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -63,7 +64,8 @@
 							<div class="col-md-4">
 								<div class="header-top-right d-none d-md-block">
 									<ul>
-										<li><a href="https://github.com/adnanazam26/HeartX-App"><i class="fa fa-github" style="font-size:40px"></i></a></li>
+										<li><a href="https://github.com/adnanazam26/HeartX-App"><i class="fa fa-github" style="font-size:30px"></i></a></li>
+										<li style="color: white">Github</li>
 										
 									</ul>
 								</div>
@@ -76,8 +78,8 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<nav class="navbar navbar-expand-lg">
-									<a class="navbar-brand" href="index.html">
-										<img src="static/img/logo/logo.svg" alt="Logo">
+									<a class="navbar-brand" href="{{ url_for('home') }}">
+										<img src="static/img/logo/logo1.jpg" alt="Logo">
 									</a>
 									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 										aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,10 +131,7 @@
 									<div class="slider-content">
 										<h1 data-animation="fadeInDown" data-duration="1.5s" data-delay=".5s">Heart Disease Prediction
 										</h1>
-										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">Lorem ipsum
-											dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt
-											ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr. Click below to Predict whether you have a heart disease or not</p>
+										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">This proposed system integrates clinical decision support with computer-based patient records (Data Sets).Provide the medical details listed below to get predictions based on the values provided. Click below to Predict whether you have chances of having heart disease or not</p>
 										<a href="#predict" class="btn theme-btn page-scroll" data-animation="fadeInUp" data-duration="1.5s"
 											data-delay=".9s">Predict</a>
 									</div>
@@ -147,10 +146,8 @@
 									<div class="slider-content">
 										<h1 data-animation="fadeInDown" data-duration="1.5s" data-delay=".5s">AI Enabled Result Prediction
 										</h1>
-										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">Lorem ipsum
-											dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt
-											ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.</p>
+										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">We used a Machine Learning moldel to predict the best and the most accurate result which 
+										determines whether you have chances of getting a heart disease or not</p>
 										<a href="#contact" class="btn theme-btn page-scroll" data-animation="fadeInUp" data-duration="1.5s"
 											data-delay=".9s">Learn More</a>
 									</div>
@@ -165,12 +162,10 @@
 									<div class="slider-content">
 										<h1 data-animation="fadeInDown" data-duration="1.5s" data-delay=".5s">Your Health is Our Top Priority
 										</h1>
-										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">Lorem ipsum
-											dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt
-											ut labore et dolore magna aliquyam erat. Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.</p>
+										<p data-animation="fadeInLeft" data-duration="1.5s" data-delay=".7s">We care for your health and thus we made sure this provides help to the people living in remote areas or the 
+										people who are unable to consult doctors during these tough times due to COVID.</p>
 										<a href="#about" class="btn theme-btn page-scroll" data-animation="fadeInUp" data-duration="1.5s"
-											data-delay=".9s">About us</a>
+											data-delay=".9s">About</a>
 									</div>
 								</div>
 							</div>
@@ -328,9 +323,9 @@
 				<div class="col-xl-8 mx-auto">
 					<div class="section-title text-center mb-55">
 						<span class="wow fadeInDown" data-wow-delay=".2s">What We Do</span>
-						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">What We Provide for Your Health</h2>
-						<p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-							dinonumy <br class="d-none d-lg-block"> eirmod tempor invidunt ut labore et dolore magn.</p>
+						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">Basic Intuition</h2>
+						<p class="wow fadeInUp" data-wow-delay=".6s">We prepared a heart disease prediction system to predict whether the patient is likely to be diagnosed with a heart disease or not using the medical history of the patient.
+					 	<br class="d-none d-lg-block"> We used different algorithms of machine learning to serve you the best results.</p>
 					</div>
 				</div>
 			</div>
@@ -455,23 +450,21 @@
 				<div class="col-xl-10 col-lg-11 mx-auto">
 					<div class="about-content text-center mb-55">
 						<div class="section-title mb-30">
-							<span class="wow fadeInDown" data-wow-delay=".2s">About Us</span>
+							<span class="wow fadeInDown" data-wow-delay=".2s">About</span>
 							<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">Welcome</h2>
 						</div>
-						<p class="mb-35 wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-							sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-							eos et accusam et justo duo dolores et ea rebum Stet clita kasd
-							gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sqit consetetur
-							sadipscing elitr,
-							sed diam nonumy eirmod tempor invidunt.</p>
+						<p class="mb-35 wow fadeInUp" data-wow-delay=".6s">HeartX is an end user support project. This web application allows users to get instant 
+						guidance on their heart disease through an intelligent system online, the application is 
+						fed with various details, it then processes user specific details to check if the user 
+						has heart disease. Our Website helps you to connect with then machine learning model, 
+						which is being used to predict whether you can have heart disease or not based 
+						on your medical details</p>
 						<a href="#" class="btn theme-btn wow fadeInUp" data-wow-delay=".8s">Learn More</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="about-img text-center">
-			<img src="static/img/about/aboot-img.png" alt="">
-		</div>
+		
 	</section>
 	<!-- ========================= about-section end ========================= -->
 
@@ -654,26 +647,7 @@
 	<!--========================= service-section end ========================= -->
 
 	<!-- ========================= testimonial-section start ========================= -->
-	<section id="testimonial" class="team-section pt-150 pb-150">
-		<div class="shape shape-5">
-			<img src="static/img/shapes/shape-2.svg" alt="">
-		</div>
-		<div class="shape shape-6">
-			<img src="static/img/shapes/shape-5.svg" alt="">
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-8 mx-auto">
-					<div class="section-title text-center mb-55">
-						<!--<span class="wow fadeInDown" data-wow-delay=".2s">Your Using my ass Free Lite Version of The Template</span>
-						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">Please, purchase full version</h2>
-						<p class="wow fadeInUp" data-wow-delay=".6s">To get all sections and permission to use with commercial projects & footer credit remove <br/></p></br>
-						<a href="https://rebrand.ly/medic-ud" rel="nofollow" class="btn theme-btn">Purchase Now</a>-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 	<!-- ========================= testimonial-section end ========================= -->
 
 	<!--========================= faq-section start ========================= -->
@@ -781,22 +755,7 @@
 	<!--========================= faq-section end ========================= -->
 
 	<!-- ========================= team-section start ========================= -->
-	<section id="team" class="team-section pt-150 pb-150">
-		<div class="shape shape-5">
-			<img src="static/img/shapes/shape-2.svg" alt="">
-		</div>
-		<div class="shape shape-6">
-			<img src="static/img/shapes/shape-5.svg" alt="">
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-8 mx-auto">
-					<div class="section-title text-center mb-55">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<br><br>
 	<!-- ========================= team-section end ========================= -->
 
 	<!-- ========================= subscribe-section start ========================= -->
@@ -863,8 +822,7 @@
 					<div class="section-title text-center mb-55">
 						<span class="wow fadeInDown" data-wow-delay=".2s">Quick Reads</span>
 						<h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">Latest News</h2>
-						<p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-							dinonumy <br class="d-none d-lg-block"> eirmod tempor invidunt ut labore et dolore magn.</p>
+						<p class="wow fadeInUp" data-wow-delay=".4s">Find latest articles <br class="d-none d-lg-block"> regarding heart diseases.</p>
 					</div>
 				</div>
 			</div>
@@ -877,8 +835,7 @@
 						<div class="blog-content">
 							<h4><a href="#">250+ Medical Tips We Just
 									Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -890,8 +847,7 @@
 						</div>
 						<div class="blog-content">
 							<h4><a href="#">100+ Medical Tips We Just Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -903,8 +859,7 @@
 						</div>
 						<div class="blog-content">
 							<h4><a href="#">250+ Medical Tips We Just Had to Share</a></h4>
-							<p>Lorem ipsum dolor sirtewt amertse consetetur sadipscing elitr, sedqw dinoumy eirmod tempor invidunt
-								sedrsu.</p>
+							
 							<a class="read-more" href="#">Read More <i class="lni lni-arrow-right"></i></a>
 						</div>
 					</div>
@@ -940,10 +895,12 @@
 				<div class="row">
 					<div class="col-xl-4 col-lg-5 col-md-6">
 						<div class="footer-widget mb-30">
-							<a href="index.html" class="logo"><img src="static/img/logo/logo.svg" alt=""></a>
-							<p>Lorem ipsum dolor serit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-								labore dolore magna
-								aliquyam erat diam voluptua.</p>
+							<a href="index.html" class="logo"><img src="static/img/logo/logo1.jpg" alt=""></a>
+							<p>Who are we?<br>
+							We are a group of highy motivated engineering students from REVA University,Bangalore. 
+							We are always eager to learn new things and enhance our skills so that we can contribute to
+							this world's rapid growing technology.
+							</p>
 							<div class="footer-social-links">
 								<ul>
 									<li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
@@ -958,28 +915,17 @@
 						<div class="footer-widget mb-30">
 							<h4>Quick Link</h4>
 							<ul class="footer-links">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Doctor</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#predict">Predict</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#faq">FAQs</a></li>
+								<li><a href="#query">Service</a></li>
+								<li><a href="#blog">Articles</a></li>
+								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-2 col-lg-3 col-md-5">
-						<div class="footer-widget mb-30">
-							<h4>Quick Link</h4>
-							<ul class="footer-links">
-								<li><a href="#">Cardiology</a></li>
-								<li><a href="#">Neurology</a></li>
-								<li><a href="#">Gastroenterology</a></li>
-								<li><a href="#">Routine Checkup</a></li>
-								<li><a href="#">Orthopedics</a></li>
-								<li><a href="#">Dental Surgery</a></li>
-							</ul>
-						</div>
-					</div>
+
 					<div class="col-xl-4 col-lg-12 col-md-7">
 						<div class="footer-widget mb-30">
 							<h4>Our Location</h4>
